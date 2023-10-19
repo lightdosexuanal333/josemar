@@ -1,3 +1,50 @@
-x-special/nautilus-clipboard
-copy
-file:///home/vboxuser/dockerfile.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Site de Josimar</title>
+</head>
+<body>
+
+<h1>Bem-vindo ao Site de Josimar</h1>
+
+<h2>Informações Pessoais</h2>
+<p>Nome: Josimar</p>
+<p>Idade: 53 anos</p>
+<p>Estado Civil: Casado</p>
+<p>Esposa:violeta</p>
+
+<h2>Família</h2>
+<p>3 Filhos:</p>
+<ol>
+    <li>[jorge]</li>
+    <li>[fred]</li>
+    <li>[pablo]</li>
+</ol>
+
+<h2>Galeria de Fotos</h2>
+<img src="josimar_foto1.jpg" alt="Foto de Josimar quase morrendo">
+<img src="familia_foto.jpg" alt="Foto da família de Josimar">
+
+
+<h2>Gatos Fofos</h2>
+<button onclick="mostrarGatosFofos()">Mostrar Gatos Fofos</button>
+<div id="gatosFofos" style="display: none;">
+    <img src="gato3.jpg" alt="Gato fofo 3">
+    <img src="gato4.jpg" alt="Gato fofo 4">
+    <img src="gato1.jpg" alt="Gato fofo 1">
+<img src="gato2.jpg" alt="Gato fofo 2">
+</div>
+
+<script>
+function mostrarGatosFofos() {
+    var divGatosFofos = document.getElementById("gatosFofos");
+    if (divGatosFofos.style.display === "none") {
+        divGatosFofos.style.display = "block";
+    } else {
+        divGatosFofos.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
